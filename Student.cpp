@@ -93,3 +93,83 @@ void Student::deleteByID(std::vector<Student*>& students)
         }
     }
 }
+
+void Student::searchStudents(std::vector<Student*> students) 
+{
+    int searchType;
+    std::cout << "Enter search type (1 for student ID, 2 for name, 3 for department, 4 for average score, 5 for scholarship): ";
+    std::cin >> searchType;
+
+    if (searchType == 1) 
+    {
+        std::string studentIDToSearch;
+        std::cout << "Enter student ID to search for: ";
+        std::cin >> studentIDToSearch;
+
+        for (Student* student : students) 
+        {
+            if (student->studentID == studentIDToSearch) 
+            {
+                student->display();
+            }
+        }
+    }
+    else if (searchType == 2) 
+    {
+        std::string nameToSearch;
+        std::cout << "Enter name to search for: ";
+        std::cin.ignore();
+        getline(std::cin, nameToSearch);
+
+        for (Student* student : students) 
+        {
+            if (student->name == nameToSearch) 
+            {
+                student->display();
+            }
+        }
+    }
+    else if (searchType == 3) 
+    {
+        std::string facultyToSearch;
+        std::cout << "Enter department to search for: ";
+        std::cin.ignore();
+        getline(std::cin, facultyToSearch);
+
+        for (Student* student : students) 
+        {
+            if (student->faculty == facultyToSearch) 
+            {
+                student->display();
+            }
+        }
+    }
+    else if (searchType == 4) 
+    {
+        double avgScoreToSearch;
+        std::cout << "Enter average score to search for: ";
+        std::cin >> avgScoreToSearch;
+
+        for (Student* student : students) 
+        {
+            if (student->avgScore == avgScoreToSearch) 
+            {
+                student->display();
+            }
+        }
+    }
+    else if (searchType == 5) 
+    {
+        double scholarshipToSearch;
+        std::cout << "Enter scholarship amount to search for: ";
+        std::cin >> scholarshipToSearch;
+
+        for (Student* student : students) 
+        {
+            if (student->getScholarship() == scholarshipToSearch) 
+            {
+                student->display();
+            }
+        }
+    }
+}

@@ -20,4 +20,5 @@ public:
     static void sortID(std::vector<Student*>& students);
     static void addStudent(std::vector<Student*>& students);
     static void deleteByID(std::vector<Student*>& students);
+    static void searchStudents(std::vector<Student*> students);
 };

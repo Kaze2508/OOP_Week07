@@ -72,5 +72,15 @@ int main(int argc, char* argv[])
         student->display();
     }
 
+    Student::deleteByID(students);
+
+    std::cout << "Students after deleting student by student ID:" << std::endl;
+    for (Student* student : students) 
+    {
+        student->display();
+    }
+
+    Student::searchStudents(students);
+
     return 0;
 }
