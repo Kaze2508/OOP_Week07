@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="RegularStudent">
-    <Position X="7" Y="4.5" Width="1.5" />
+    <Position X="7" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAABAAIgQAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAIAAAgAAAAAEAABAAIgQAAAAAAAA=</HashCode>
       <FileName>Regular.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Student">
     <Position X="6" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAwAAAAAAAAEAAAAAAAAEEABAAAgAAAAAAAAA=</HashCode>
+      <HashCode>ABIAIAAAwAAAAAIgAEABAAAAAAEEABAAAgAAAAACAAA=</HashCode>
       <FileName>Student.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TransferStudent">
-    <Position X="4.75" Y="4.5" Width="1.5" />
+    <Position X="4.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAAgAAAAAAAEAABAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAEAAIAAgAAAAAAAEAABAAAgEAAAAAAAA=</HashCode>
       <FileName>Transfer.h</FileName>
     </TypeIdentifier>
   </Class>
